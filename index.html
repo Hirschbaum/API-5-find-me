@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Get My Location</title>
+    <meta name='viewport' content="width=device-width, initial-scale=1.0" />
+    <!--changed content='initial-scale=1,maximum-scale=1,user-scalable=no'-->
+    <link rel="stylesheet" href="style.css">
+    <!---------------------------------MAPBOX LINKS-------------------------------------->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+
+    <!-----------------------   GET MY LOCATION button   ---------------------->
+    <div class="get-location-field">
+        <input type="submit" class="button" value="Get My Location" name="get_location">
+    </div>
+
+    <br>
+
+    <!-----------------------    THE MAP   -----------mapbox-------------------->
+    <div id='map'></div>
+    <div id='menu'>
+        <input id='basic' type='radio' name='rtoggle' value='basic' checked='checked'>
+        <label for='basic'>basic</label>
+
+        <input id='streets' type='radio' name='rtoggle' value='streets'>
+        <label for='streets'>streets</label>
+
+        <input id='bright' type='radio' name='rtoggle' value='bright'>
+        <label for='bright'>bright</label>
+
+        <input id='light' type='radio' name='rtoggle' value='light'>
+        <label for='light'>light</label>
+
+        <input id='dark' type='radio' name='rtoggle' value='dark'>
+        <label for='dark'>dark</label>
+
+        <input id='satellite' type='radio' name='rtoggle' value='satellite'>
+        <label for='satellite'>satellite</label>
+    </div>
+
+    <!---------------------   jQuery and JavaScript   ------------------------->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="ajax.js"></script>
+
+</body>
